@@ -1,9 +1,9 @@
 def map(array)
-new = []
+new_array = Array.new 
 i = 0
 while i < array.length
-new.push(yield(array[i]))
-i += 1
-end
-new
+  new_array.push(yield(array[i]))
+  i += 1
+  end
+new_array
 end
